@@ -1,5 +1,7 @@
 # trivy-updated
 A trivy with the vulnerability definitions up-to-date.
 
-> Image gets created via action.
-> 
+The purpose of this image is to use a trivy image without having to wait for it to update its vulnerabilities database. Plus, sometimes, updating the vulnerabilities database fails due to too many connections.  
+This image gets built 2 times a day and, if being a maximum of 12h behind with the vulnerabilities is ok for you, you can use it.
+
+> Image gets created via scheduled action.
