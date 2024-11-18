@@ -6,7 +6,7 @@ attempts=10
 while : ; do
     echo "Attempt left: ${attempts}"
     attempts=$((attempts-1))
-    trivy image --download-db-only
+    trivy image --download-db-only --download-java-db-only
     if [ $? == 0 ]; then
         break
     fi
