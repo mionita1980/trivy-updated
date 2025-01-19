@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #must be numeric and at least 1
-attempts=10
+attempts=8
 
 while : ; do
     echo "Attempt left: ${attempts}"
